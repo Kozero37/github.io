@@ -1,0 +1,413 @@
+/* MAIN SETTINGS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: #124559;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.top_block__{
+    height: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 30px;
+    margin-left: -32px;
+    color: #eff6e0;
+   
+}
+.create_task {
+    outline: none;
+    border: 1px solid black;
+    background-color:#a8fbff;
+    color: #000000;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.create_task:hover {
+    background-color: #d3e9eb;
+    border: 1px solid black;
+    transition: 0.3s;
+    color: #2b2727;
+}
+
+@media(max-width: 767px) {
+    .container {
+		max-width: none;
+		padding: 0 16px;
+	}
+}
+
+.inp[type="text"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    outline: none; 
+    font-size: 15px;
+    height: 25px; 
+    width: 500px; 
+    background-color: #eff6e0;
+ }
+
+.create_question{
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    background-color:#92ee8f;
+    color: #fff7f7;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.create_question:hover{
+    color: #004d61;
+    background-color: #ffffff;
+}
+.name_qw{
+    
+    margin-left: 40px;
+    width: 400px;
+    
+}
+.input_qw[type="text"]{
+    display: block;
+    outline: none; 
+    padding: 10px;
+    border: 1px solid #000000;
+    font-size: 30px;
+    height: 25px; 
+    width: 400px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #a8fbff;
+    
+}
+.top_block{
+    display: flex;
+    padding-left: 5px;
+    width: 500px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 30px;
+    background-color: #eff6e0;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    margin-left: 100px;
+    font-size: 15px;
+}
+.fff{
+    display: flex;
+    align-items: center;
+}
+
+.ph{
+    font-size: 15px;
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 7px;
+    margin-left: 25px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #aec3b0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #aec3b0;
+}
+.ph:hover{
+    border: 2px solid #eff6e0;
+    transition: 0.3s;
+}
+.options{
+    align-items: center;}
+
+.wer{
+    display: flex;
+    align-items: center;
+}
+.ger{
+    font-size: 23px;
+    background-color: #f8849d;
+    margin-top: 30px;
+    text-align: center;
+    width: 30px;
+    height: 32px;
+    border: 1px solid #020202;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*colors
+#057dcd;
+#43b0f1
+#1e3d58
+#e8eef1
+*/
+/* Popup container */
+.popup {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #70A9A1;
+    border-radius: 3px;
+    border: 1px solid #020202;
+    width: 30px;
+    height: 32px;
+    z-index: 0;
+}
+
+/* The actual popup (appears on top) */
+.popuptext {
+    visibility: hidden;
+    width: 1000px;
+    height: 1000px;
+    background-color: #70A9A1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    right: 20.25%;
+    margin-top: 700px;
+    z-index: 5;
+    overflow-y: auto;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.show {
+    visibility: visible;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+
+.int{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    outline: none; 
+    font-size: 15px;
+    height: 25px; 
+    width: 500px; 
+    background-color: #eff6e0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.fu{
+    display: flex;
+}
+.change{
+    font-size: 17px;
+    margin-top: 28px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eff6e0;
+    border-radius: 6px;
+    border: 1px solid #020202;
+    width: 120px;
+    height: 38px;
+    z-index: 3;
+}
+.input_qwestion{
+    display: block;
+    margin-top: 30px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    outline: none; 
+    font-size: 15px;
+    height: 23px; 
+    width: 600px; 
+    background-color: #eff6e0;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.quiz{
+    display: block;
+    align-items: center;
+    padding-left: 80px;
+}
+.add_qwestion{
+    font-size: 18px;
+    margin-top: 23px;
+    margin-left: 5px;
+    padding-top: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #2678f1;
+    border: 1px solid #020202;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+}
+.typer[type="text"]{
+    right: 300px;
+    display: block;
+    margin-top: 30px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    outline: none; 
+    font-size: 15px;
+    height: 23px; 
+    width: 600px; 
+    background-color: #eff6e0;
+    margin-top: 22px;
+}
+.quizzy{
+    display: flex;
+    align-items: center;
+}
+.quizy{
+    display: flex;
+    align-items: center;
+}
+.adw_qwestion{
+    margin-top: 23px;
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f8849d;
+    border: 1px solid #020202;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+    font-size: 20px;
+    z-index: 5;
+}
+.saver{
+    font-size: 18px;
+    margin-top: 23px;
+    margin-left: 5px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    background-color: #72f58f;
+    border: 1px solid #020202;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+}
+
+.inp_qwestion{
+    display: flex;
+}
+.popuption{
+    font-size: 17px;
+    margin-top: 27px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #40798C;
+    border-radius: 3px;
+    border: 1px solid #020202;
+    width: 30px;
+    height: 30px;
+    z-index: 0;
+   
+}
+
+.popiloma{
+    visibility: hidden;
+    width: 800px;
+    height: 1000px;
+    background-color: #40798C;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    margin-left: 100px;
+    margin-top: 20px;
+    z-index: 5;
+    overflow-y: auto;
+}
+.shower{
+    visibility: visible;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+}
+.oxrana{
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 6%;
+    border: 1px solid black;
+    background-color: #aec3b0;
+    color: black;
+    font-size: 23px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 363px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.pher{
+    font-size: 23px;
+    margin-top: 18px;
+    margin-left: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #44ac92;
+    color: #0B2027;
+    border-radius: 3px;
+    border: 1.5px solid #000000;
+    width: 29px;
+    height: 29px;
+    z-index: 0;
+   
+}
+.gerq {
+    font-size: 23px;
+    background-color: #f8849d;
+    margin-top: 27px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #020202;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
